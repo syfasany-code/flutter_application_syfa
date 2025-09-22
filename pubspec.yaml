@@ -18,5 +18,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets: 
-  - image/yasyfa.jpg
+  - images/yasyfa.jpg
+  - images/gunung.jpeg
+  - images/pantai.jpeg
+  - images/kota.jpeg
   
