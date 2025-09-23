@@ -23,23 +23,6 @@ class ImageItem implements ListItem {
   ImageItem(this.title, this.imagePath);
 }
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false, // biar banner debug hilang
-      title: 'Flutter List Example',
-      home: ListExample(),
-    );
-  }
-}
-
 class ListExample extends StatelessWidget {
   const ListExample({super.key});
 

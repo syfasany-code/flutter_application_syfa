@@ -1,22 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Latihan1());
-}
-
-class Latihan1 extends StatelessWidget {
-  const Latihan1({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'List dan GridView',
-      home: const HomePage(),
-    );
-  }
-}
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 

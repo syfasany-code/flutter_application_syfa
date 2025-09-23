@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/latihan2.dart';
+import 'package:flutter_application_syfa/profilpage.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Aplikasi Flutter",
-      home: ListExample(), // halaman utama
+      home: ProfilePage(), // halaman utama
     );
   }
 }

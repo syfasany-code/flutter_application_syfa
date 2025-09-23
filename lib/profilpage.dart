@@ -1,22 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const profil());
-}
-
-class profil extends StatelessWidget {
-  const profil({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Profil Saya',
-      home: const ProfilePage(),
-    );
-  }
-}
-
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
@@ -35,7 +18,7 @@ class ProfilePage extends StatelessWidget {
               // Foto Profil
               const CircleAvatar(
                 radius: 60,
-                backgroundImage: AssetImage("image/yasyfa.jpg"),
+                backgroundImage: AssetImage("images/yasyfa.jpg"),
               ),
               const SizedBox(height: 15),
               // Nama Lengkap
