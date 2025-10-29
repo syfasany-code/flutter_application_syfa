@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/latihan3(spaced&longlist).dart';
+import 'package:flutter_application_syfa/ulanganobjekwisata.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Aplikasi Flutter",
-      home: HomeScreen(), // halaman utama
+      home: ObjekWisata(), // halaman utama
     );
   }
 }
