@@ -7,6 +7,9 @@ class LatihanNavigator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final String nama = 'Yasyfa Hidayanti';
+    final String alamat = 'Jl.Cogrek No 02';
+
     return Scaffold(
       appBar: AppBar(title: Text('Halaman 1')),
       body: Center(
@@ -17,7 +20,10 @@ class LatihanNavigator extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HalamanDua()),
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        HalamanDua(nama: nama, alamat: alamat),
+                  ),
                 );
               },
               child: Text('Pergi Ke Halaman Kedua'),

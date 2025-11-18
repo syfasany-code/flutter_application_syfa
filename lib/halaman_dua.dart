@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_syfa/halaman_tiga.dart';
 
 class HalamanDua extends StatelessWidget {
-  const HalamanDua({super.key});
+  final String nama;
+  final String alamat;
+  const HalamanDua({super.key, required this.nama, required this.alamat});
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +14,10 @@ class HalamanDua extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text("Hallo, $nama!"),
+            SizedBox(height: 20),
+            Text("Alamat kamu di: $alamat"),
+            SizedBox(height: 40),
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
