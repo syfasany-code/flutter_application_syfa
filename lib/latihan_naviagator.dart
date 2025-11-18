@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_syfa/halaman_dua.dart';
+import 'package:flutter_application_syfa/halaman_tiga.dart';
 
-class LatihanNaviagator extends StatelessWidget {
-  const LatihanNaviagator({super.key});
+class LatihanNavigator extends StatelessWidget {
+  const LatihanNavigator({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,15 +13,25 @@ class LatihanNaviagator extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {}
-             Navigator.push(
-              context,
-              MaterialPageRoute
-              (builder: (context)
-               => HalamanDua()),
-            );
-  },
-  child: Text(data),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HalamanDua()),
+                );
+              },
+              child: Text('Pergi Ke Halaman Kedua'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HalamanTiga()),
+                );
+              },
+              child: Text('Pergi Ke Halaman Ke Tiga'),
+            ),
           ],
         ),
       ),

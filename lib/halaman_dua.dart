@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_syfa/halaman_tiga.dart';
 
 class HalamanDua extends StatelessWidget {
   const HalamanDua({super.key});
@@ -12,10 +13,21 @@ class HalamanDua extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text('Kembali ke Halaman Sebelumnya'))
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Kembali Ke Halaman Sebelumnya'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HalamanTiga()),
+                );
+              },
+              child: Text('Ke Halaman Tiga'),
+            ),
           ],
         ),
       ),

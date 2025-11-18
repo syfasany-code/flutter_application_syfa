@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/ulanganobjekwisata.dart';
+import 'package:flutter_application_syfa/latihan_naviagator.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,8 +12,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Aplikasi Flutter",
-      home: ObjekWisata(), // halaman utama
+      title: "Latihan Navigator",
+      home: LatihanNavigator(), // halaman utama
     );
   }
 }
