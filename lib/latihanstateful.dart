@@ -28,6 +28,9 @@ class _LatihanstateState extends State<Latihanstate> {
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: incrementCounter,
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 249, 129, 169),
+                  foregroundColor: Colors.white),
               child: const Text('Tambah Counter'),
             ),
           ],
