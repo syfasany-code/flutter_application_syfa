@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/form_validasi.dart';
+import 'package:flutter_application_syfa/latihanskill.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,8 +12,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Latihan Navigator",
-      home: Formvalidasi(), // halaman utama
+      title: "Latihan Skill",
+      home: HalamanUtama(), // halaman utama
     );
   }
 }
