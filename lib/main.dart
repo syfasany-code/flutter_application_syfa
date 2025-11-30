@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/latihanskill.dart';
+import 'package:flutter_application_syfa/skil.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Latihan Skill",
-      home: HalamanUtama(), // halaman utama
+      home: Skill(), // halaman utama
     );
   }
 }

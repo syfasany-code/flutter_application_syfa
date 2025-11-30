@@ -11,7 +11,7 @@ class MyWidget extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ListTile( leading: Icon(Icons.map), title: Text('Map'),),
+          ListTile(leading: Icon(Icons.map), title: Text('Map'),),
           ListTile(leading: Icon(Icons.photo_album), title: Text('Album'),),
           ListTile(leading: Icon(Icons.phone), title: Text('Phone'),),
         ],
