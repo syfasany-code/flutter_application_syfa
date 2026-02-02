@@ -1,35 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/praktik2.dart';
 
-class praktik extends StatelessWidget {
-  const praktik({super.key});
+class Praktik2 extends StatelessWidget {
+  const Praktik2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Halaman 1')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'Yasyfa Hidayanti',
-              style: TextStyle(fontSize: 20, color: Colors.black) ,
+      appBar: AppBar(title: Text('Halaman 2')),
+      body: Column(
+        children: [
+          SizedBox(height: 20),
+          Center(
+            child: ClipRRect(
+               borderRadius: BorderRadius.circular(100),
+              child: Image.asset(
+                'images/yasyfa.jpg',
+                width: 150,
+                height: 150,
+                fit: BoxFit.cover,
+              ),
             ),
-            ElevatedButton(
-              onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute
-                (builder: (context)
-                => praktik2()),
-              );
-              },
-
-            child: Text('Lihat Detail'),),
-          ],
-        ),
-      ),
+          ),
+            SizedBox(height: 20,),
+          Text("Yasyfa Hidayanti", 
+          style: TextStyle(fontSize: 16, color: Color(0xFF111111), fontWeight: FontWeight.bold),
+          ),
+          SizedBox(height: 12),
+          Text("Pengembangan Perangkat Lunak Dan Gim", 
+          style: TextStyle(fontSize: 6, color: Color(0xFF44444)),
+          ),
+          SizedBox(height: 9),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: 10),
+              ElevatedButton(
+                onPressed:() {
+                  Navigator.pop(context);
+              }, 
+              child: Text('Kembali'),
+              )
+            ],
+          )
+        ],
+      )
     );
   }
 }

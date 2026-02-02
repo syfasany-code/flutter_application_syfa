@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class  extends StatelessWidget {
+class Praktik2 extends StatelessWidget {
   const Praktik2({super.key});
 
   @override
