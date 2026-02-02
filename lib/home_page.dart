@@ -10,8 +10,9 @@ class HomePage extends StatelessWidget {
     final counter = context.watch<CounterProvider>();
 
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 236, 181, 199),
       appBar: AppBar(
-        title: const Text('Manajeemen State Provider'),
+        title: const Text('Manajemen State Provider'),
       ),
       body: Center(
         child: Text(
