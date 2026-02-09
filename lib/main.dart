@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/home_page.dart';
-import 'package:flutter_application_syfa/providers/counter_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_application_syfa/input&tampilkan.dart';
 
-void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (_) => CounterProvider(),
-      child: const MainApp(),
-    )
-  );
-}
+// void main() {
+//   runApp(
+//     ChangeNotifierProvider(
+//       create: (_) => CounterProvider(),
+//       child: const MainApp(),
+//     )
+//   );
+// }
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -20,7 +18,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Latihan',
-      home: HomePage()
+      home: InputPage()
     );
   }
 }
