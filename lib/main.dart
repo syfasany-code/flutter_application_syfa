@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/input&tampilkan.dart';
+import 'package:flutter_application_syfa/form_biodata.dart';
 
 // void main() {
 //   runApp(
@@ -10,6 +10,10 @@ import 'package:flutter_application_syfa/input&tampilkan.dart';
 //   );
 // }
 
+void main(){
+  runApp(const MainApp());
+}
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -18,7 +22,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Latihan',
-      home: InputPage()
+      home: FormBiodataPage()
     );
   }
 }
