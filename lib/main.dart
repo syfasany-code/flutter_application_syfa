@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_syfa/form_biodata.dart';
+import 'login_page.dart';
+import 'home_page_login_navigation.dart';
 
 // void main() {
 //   runApp(
@@ -21,8 +22,12 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Latihan',
-      home: FormBiodataPage()
+      title: 'Named Routes App',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/home':(context) => HomePageLoginNavigation(),
+      },
     );
   }
 }
